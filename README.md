@@ -2,7 +2,7 @@
 
 ♠ Utilizando um modelo de Deep Learning para prever se um cliente possui risco de inadimplência em seu empréstimo, com base em características como: Renda Anual, Idade, Experiência de Trabalho, Anos no Emprego Atual, Estado Civil, Propriedade de Imóvel e Propriedade de Veículo.
 
-### Link do Aplicativo Web: <a href="https://loan-default-prediction-ffdzmg628wksvcaey7kwpi.streamlit.app/" style="color: tomato">Clique aqui para acessar o App Streamlit</a> 🥰📊
+### Link do Aplicativo Web: <a href="https://loan-risk-predictor-kdmg8embdgkn2t5axgmnet.streamlit.app/" style="color: tomato">Clique aqui para acessar o App Streamlit</a> 🥰📊
 
 <br>
 
