@@ -5,3 +5,4 @@ tensorflow==2.15.0
 scikit-learn==1.2.0
 numpy
 pandas
+prefect
