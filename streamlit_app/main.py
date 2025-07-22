@@ -230,6 +230,7 @@ from time import sleep
 import pandas as pd
 import numpy as np
 import os
+from flows.loan_flow import loan_flow
 
 import streamlit as st
 from streamlit.components.v1 import html
@@ -398,6 +399,11 @@ def run():
                                 st.image(img_path, caption="", width=105)
                                 st.subheader(f"Resultado: Empréstimo Negado")
                                 st.subheader(":red[Risco Alto]")
+                                
+                    if st.button("📦 Executar Pipeline com Prefect"):
+                        with st.spinner("Executando pipeline Prefect..."):
+                            loan_flow()
+                            st.success("Pipeline Prefect executado com sucesso!")
 
         # Outra página
         if page == "Do Arquivo CSV":
