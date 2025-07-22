@@ -6,7 +6,7 @@ import tensorflow as tf
 # Carrega o modelo
 @task
 def load_model():
-    return tf.keras.models.load_model("loan_defualt_risk_detection_ann_v3.h5")
+    return tf.keras.models.load_model("loan_default_risk_detection_ann_v3.h5")
 
 @task
 def load_scaler():
