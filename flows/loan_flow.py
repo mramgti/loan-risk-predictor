@@ -2,15 +2,22 @@ from prefect import flow, task
 import pandas as pd
 import pickle
 import tensorflow as tf
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODELS_DIR = os.path.join(BASE_DIR, "..", "models")
 
 # Carrega o modelo
 @task
 def load_model():
-    return tf.keras.models.load_model("loan_default_risk_detection_ann_v3.h5")
+    model_path = os.path.join(MODELS_DIR, "loan_default_risk_detection_ann_v3.h5")
+    return tf.keras.models.load_model(model_path)
 
 @task
 def load_scaler():
-    with open("model_min_max_scaler.pkl", "rb") as f:
+    scaler_path = os.path.join(MODELS_DIR, "model_min_max_scaler.pkl")
+    with open(scaler_path, "rb") as f:
         return pickle.load(f)
 
 # Simula os dados (você pode alterar para ler de um CSV, banco, etc)
