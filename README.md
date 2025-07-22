@@ -19,7 +19,5 @@
 <br>
 
 <p align="center">
-<img src = "https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png" width=150>
+<img src = "https://images.seeklogo.com/logo-png/44/1/streamlit-logo-png_seeklogo-441815.png" width=150>
 </p>
-
-
